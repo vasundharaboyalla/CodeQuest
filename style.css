@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: #0f0f1e;
+    color: #e0e0f0;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    background: #1a1a2e;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 255, 200, 0.1);
+    border-bottom: 2px solid #00ffc8;
+}
+
+nav .logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00ffc8;
+    text-shadow: 0 0 10px rgba(0, 255, 200, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #e0e0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #00ffc8;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 15px;
+    border: 1px solid #00ffc8;
+    box-shadow: 0 0 30px rgba(0, 255, 200, 0.2);
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #00ffc8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #b0b0d0;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #00ffc8;
+    color: #0f0f1e;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #00cc9f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 200, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #00ffc8;
+    border: 2px solid #00ffc8;
+}
+
+.btn-secondary:hover {
+    background: #00ffc8;
+    color: #0f0f1e;
+}
+
+.btn-danger { background: #ff4757; color: white; }
+.btn-danger:hover { background: #e03544; }
+
+/* Cards */
+.card {
+    background: #1a1a2e;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2d2d4a;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h2, .card h3 {
+    color: #00ffc8;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+.form-box {
+    max-width: 450px;
+    margin: 60px auto;
+    background: #1a1a2e;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #00ffc8;
+    box-shadow: 0 0 30px rgba(0, 255, 200, 0.15);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #00ffc8;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #b0b0d0;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0f0f1e;
+    border: 1px solid #2d2d4a;
+    border-radius: 8px;
+    color: #e0e0f0;
+    font-size: 1em;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00ffc8;
+    box-shadow: 0 0 8px rgba(0, 255, 200, 0.3);
+}
+
+/* Messages */
+.msg-error {
+    background: rgba(255, 71, 87, 0.15);
+    color: #ff4757;
+    border: 1px solid #ff4757;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.msg-success {
+    background: rgba(0, 255, 200, 0.15);
+    color: #00ffc8;
+    border: 1px solid #00ffc8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1a1a2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #2d2d4a;
+}
+
+th {
+    background: #00ffc8;
+    color: #0f0f1e;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #22224a;
+}
+
+/* Badges */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.badge-easy { background: #00ffc8; color: #0f0f1e; }
+.badge-medium { background: #ffb700; color: #0f0f1e; }
+.badge-hard { background: #ff4757; color: white; }
+
+.rank-gold { color: #ffd700; font-weight: bold; }
+.rank-silver { color: #c0c0c0; font-weight: bold; }
+.rank-bronze { color: #cd7f32; font-weight: bold; }
+
+/* Mission */
+.mission {
+    background: #1a1a2e;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #00ffc8;
+    margin-bottom: 20px;
+}
+
+.mission h3 {
+    color: #00ffc8;
+    margin-bottom: 10px;
+}
+
+.mission .meta {
+    color: #8080a0;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.mission .options {
+    margin: 15px 0;
+}
+
+.mission .options label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background: #0f0f1e;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.mission .options label:hover {
+    background: #22224a;
+}
+
+/* Stats grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-box {
+    background: #1a1a2e;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #2d2d4a;
+}
+
+.stat-box .value {
+    font-size: 2.5em;
+    color: #00ffc8;
+    font-weight: bold;
+}
+
+.stat-box .label {
+    color: #8080a0;
+    margin-top: 8px;
+}
+
+/* Progress bar */
+.progress-bar {
+    background: #0f0f1e;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #2d2d4a;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #00ffc8, #00b3ff);
+    height: 100%;
+    transition: width 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #606080;
+    margin-top: 40px;
+    border-top: 1px solid #2d2d4a;
+}
